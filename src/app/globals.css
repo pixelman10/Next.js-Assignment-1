@@ -2,26 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.homeConatiner {
+  background-color: olive; 
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ max-width: 2000px;
+ min-height: 800px;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.childContainer{
+ width: fit-content;
+ height: 250px;
+ margin-bottom: 40px;
+ margin-left: 40px;
+ text-align:start;
+ font-size: 90px;
+ font-weight: 1000px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.pinkcolour{
+ color:mediumblue;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.Image{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 25px;
+ padding-right: 70px;
+ margin-top: 50px;
 }
+
+.intro-pic{
+ max-width: 100%;
+ height: auto;
+ width: 400px; 
+ border-radius: 15px; 
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+intro-pic:hover {
+ transform: scale(1.05); 
+ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
